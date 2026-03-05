@@ -5,21 +5,21 @@
 class Lazylogcat < Formula
   desc "Interactive Android logcat viewer"
   homepage "https://github.com/parfenovvs/lazylogcat"
-  version "0.8.0"
+  version "0.9.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/parfenovvs/lazylogcat/releases/download/v0.8.0/lazylogcat_0.8.0_darwin_amd64.tar.gz"
-      sha256 "c4e82c73823dd8f743e9b2997b8c04469ccf3ce9f210658bedd16295020080fc"
+      url "https://github.com/parfenovvs/lazylogcat/releases/download/v0.9.0/lazylogcat_0.9.0_darwin_amd64.tar.gz"
+      sha256 "aaa34205d2afbe61657ba4e44b3796154915828fcccf0a6d26c0e9f094c054ac"
 
       define_method(:install) do
         bin.install "lazylogcat"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/parfenovvs/lazylogcat/releases/download/v0.8.0/lazylogcat_0.8.0_darwin_arm64.tar.gz"
-      sha256 "c601dabd2935698729d8a974f141880a98a06b8f04f486988b865c874209ef08"
+      url "https://github.com/parfenovvs/lazylogcat/releases/download/v0.9.0/lazylogcat_0.9.0_darwin_arm64.tar.gz"
+      sha256 "b56735ec130048f28c0831de0582b7f52377a910ab99c4df8cdbe026947b20d9"
 
       define_method(:install) do
         bin.install "lazylogcat"
@@ -29,15 +29,15 @@ class Lazylogcat < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/parfenovvs/lazylogcat/releases/download/v0.8.0/lazylogcat_0.8.0_linux_amd64.tar.gz"
-      sha256 "0fe3d065323b25ceae5231b140da1fb0c105f2f40266bf936b056c84d7f74c82"
+      url "https://github.com/parfenovvs/lazylogcat/releases/download/v0.9.0/lazylogcat_0.9.0_linux_amd64.tar.gz"
+      sha256 "c2141876021b64304084468895be8761d8196e15a6eacd93d8e71eaab29227ab"
       define_method(:install) do
         bin.install "lazylogcat"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/parfenovvs/lazylogcat/releases/download/v0.8.0/lazylogcat_0.8.0_linux_arm64.tar.gz"
-      sha256 "163b32a889aedb5b23845a32b1c8d95de73e13911f13a3d9ddbefbe237340bb3"
+      url "https://github.com/parfenovvs/lazylogcat/releases/download/v0.9.0/lazylogcat_0.9.0_linux_arm64.tar.gz"
+      sha256 "206542f8b86396142fed77a58ad4b6d63846a06bb8f1f17d6b6c6bfeb1901eb9"
       define_method(:install) do
         bin.install "lazylogcat"
       end
